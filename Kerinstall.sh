@@ -18,7 +18,7 @@ truncate BOOTSECTION.bin -s 512
 
 cc bootloader/Kernel_jmp.c -o Kernel_jmp.bin
 
-cc kernel/CPU/Interrupt.h -o kernel/CPU/Interrupt.bin
+
 
 cc kernel/CPU/Interrupt_code.c -o kernel/CPU/Interrupt_code.bin
 
@@ -26,7 +26,7 @@ cc kernel/CPU/Sleep.c -o kernel/CPU/Sleep.bin
 
 cc kernel/Crash_handler/Memory_crash.c -o kernel/Crash_handler/Memory_crash.bin
 
-cc kernel/Disk/Diskmanage.h -o kernel/Disk/Diskmanage.bin
+
 
 cc kernel/Disk/Diskmanage_code.c -o kernel/Disk/Diskmanage_code.bin
 
@@ -36,13 +36,12 @@ cc kernel/Krnlcall/Disk_call.c -o kernel/Krnlcall/Disk_call.bin
 
 cc kernel/Krnlcall/Interrupt_call.c -o kernel/Krnlcall/Interrupt_call.bin
 
-cc kernel/Memory/Memcall.h -o kernel/Memory/Memcall.bin
+
 
 cc kernel/Memory/Memcall_code.c -o kernel/Memory/Memcall_code.bin
 
 cc kernel/Panic/kernel_panic.c -o kernel/Panic/kernel_panic.bin
 
-cc kernel/Process_scheduler/Pid_manage.h -o kernel/Process_scheduler/Pid_manage.bin
 
 cc kernel/Process_scheduler/Pid_manage_code.c -o kernel/Process_scheduler/Pid_manage_code.bin
 
@@ -60,7 +59,7 @@ rm bootloader/BOOTSECTION.asm
 
 rm bootloader/Kernel_jmp.c
 
-rm kernel/CPU/Interrupt.h 
+
 
 rm kernel/CPU/Interrupt_code.c 
 
@@ -68,7 +67,7 @@ rm kernel/CPU/Sleep.c
 
 rm  kernel/Crash_handler/Memory_crash.c 
 
-rm  kernel/Disk/Diskmanage.h 
+
 
 rm  kernel/Disk/Diskmanage_code.c 
 
@@ -78,13 +77,13 @@ rm  kernel/Krnlcall/Disk_call.c
 
 rm  kernel/Krnlcall/Interrupt_call.c 
 
-rm kernel/Memory/Memcall.h 
+
 
 rm kernel/Memory/Memcall_code.c 
 
 rm kernel/Panic/kernel_panic.c 
 
-rm kernel/Process_scheduler/Pid_manage.h 
+
 
 rm kernel/Process_scheduler/Pid_manage_code.c 
 
